@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Courses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>let us grow by our community</h1>
+    <img src="images/airpollution1.jpeg">
+    <br>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contactv">Contact Us as a volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro">
+      <h2>Welcome to Our Platform</h2>
+      <p>Our project aims to raise awareness about labor rights and environmental sustainability by advocating for government initiatives that allocate funds from large companies to enhance the eco-friendliness of small factories. This effort not only aims to reduce air pollution but also supports smaller businesses in adopting greener practices. Additionally, we prioritize the safety of laborers by providing small factories with essential safety tools and equipment. Furthermore, we plan to offer specialized courses and certifications for workers, empowering them to apply for positions in more advanced manufacturing facilities. Through these comprehensive measures, our initiative strives to create a safer, more sustainable, and fairer working environment for all laborers involved.</p>
+    </section>
+
+    <section id="courses">
+      <h2>Available Courses</h2>
+      <button id="loadCourses" onclick="window.location.href='courses.html'">Load Courses</button>
+      <div id="course-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h2>Contact Us as labour or manager</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your email or your number phone" required>
+
+        <label for="number">national ID</label>
+        <textarea id="message" name="message" placeholder="your national ID" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="formResponse"></p>
+    </section>
+    <br>
+    <br>
+    <section id="contactv">
+        <h2>Contact Us as volunteer</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="your full name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="your email or your number phone" required>
+  
+          <label for="number">national ID</label>
+          <textarea id="message" name="message" placeholder="your national ID" required></textarea>
+  
+          <button type="submit">Send</button>
+        </form>
+        <p id="formResponse"></p>
+      </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
